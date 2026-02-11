@@ -10,7 +10,7 @@ static int tests_failed = 0;
         tests_run++;                                          \
         if ((expected) != (actual)) {                         \
             tests_failed++;                                   \
-            printf("❌ Test failed at line %d\n", __LINE__);  \
+            printf("Test failed at line %d\n", __LINE__);  \
             printf("   Expected: %d\n", (expected));          \
             printf("   Actual  : %d\n\n", (actual));          \
         }                                                     \
@@ -52,9 +52,10 @@ static void test_swap_numbers() {
 
 static void test_swap_bits() {
     // 1010 (10)
-    ASSERT_EQ(6, swap_two_bits(10, 1, 2)); 
-    // swapping bit1(1) and bit2(0) → 0110 (6)
+    ASSERT_EQ(12, swap_two_bits(10, 1, 2)); 
+    // swapping bit1(1) and bit2(0) → 1100 (12)
 }
+
 
 int run_bit_ops_tests() {
     printf("Running bit_ops tests...\n\n");
@@ -71,7 +72,7 @@ int run_bit_ops_tests() {
     printf("Tests failed : %d\n", tests_failed);
 
     if (tests_failed == 0) {
-        printf("\n✅ All tests passed!\n");
+        printf("\nAll tests passed!\n");
     }
 
     return tests_failed;
