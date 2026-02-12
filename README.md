@@ -23,7 +23,7 @@ bitwise/
 
 ## Implemented Functions
 
-### Bit Operations (To be implemented in next commit)
+### Bit Operations 
 
 * set_bit(int number, int position)
 * clear_bit(int number, int position)
@@ -35,6 +35,15 @@ bitwise/
 ### Number Manipulation
 
 * swap_two_numbers_without_temp(int *a, int *b)
+
+### Bit Count 
+
+
+* count_set_bits(int n);
+* is_power_of_two(int n);
+* lowest_set_bit(int n);
+* highest_set_bit(int n);
+* parity(int n);
 
 All functions are implemented using only:
 
