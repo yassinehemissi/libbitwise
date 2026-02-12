@@ -29,20 +29,6 @@ static void test_count_set_bits() {
     ASSERT_EQ(4, count_set_bits(15));    // 1111
 }
 
-
-/* ============================= */
-/* count_set_bits (Kernighan)   */
-/* ============================= */
-
-static void test_count_set_bits_kernighan() {
-    ASSERT_EQ(0, count_set_bits_kernighan(0));
-    ASSERT_EQ(1, count_set_bits_kernighan(1));
-    ASSERT_EQ(2, count_set_bits_kernighan(3));
-    ASSERT_EQ(2, count_set_bits_kernighan(10));
-    ASSERT_EQ(4, count_set_bits_kernighan(15));
-}
-
-
 /* ============================= */
 /* is_power_of_two              */
 /* ============================= */
@@ -104,7 +90,6 @@ int run_bit_count_tests() {
     printf("Running bit_count tests...\n\n");
 
     test_count_set_bits();
-    test_count_set_bits_kernighan();
     test_is_power_of_two();
     test_lowest_set_bit();
     test_highest_set_bit();

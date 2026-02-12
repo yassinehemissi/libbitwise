@@ -20,6 +20,7 @@ void swap_two_numbers_without_temp(int * a, int * b);
 int count_set_bits(int n);
 int is_power_of_two(int n);
 int lowest_set_bit(int n);
+int highest_set_bit(int n);
 int parity(int n);
 
 
