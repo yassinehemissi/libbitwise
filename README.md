@@ -39,11 +39,21 @@ bitwise/
 ### Bit Count 
 
 
-* count_set_bits(int n);
-* is_power_of_two(int n);
-* lowest_set_bit(int n);
-* highest_set_bit(int n);
-* parity(int n);
+* count_set_bits(int n)
+* is_power_of_two(int n)
+* lowest_set_bit(int n)
+* highest_set_bit(int n)
+* parity(int n)
+
+### Bit Masks 
+
+* make_mask(int start, int len)
+* extract_bits(unsigned int n, int start, int len)
+* clear_bits_range(unsigned int n, int start, int len)
+* set_bits_range(unsigned int n, int start, int len)
+* insert_bits(unsigned int dest, unsigned int src, int start, int len)
+
+
 
 All functions are implemented using only:
 
