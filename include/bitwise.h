@@ -23,5 +23,12 @@ int lowest_set_bit(int n);
 int highest_set_bit(int n);
 int parity(int n);
 
+// Bit Mask
+
+unsigned int make_mask(int start, int len);
+unsigned int extract_bits(unsigned int n, int start, int len);
+unsigned int clear_bits_range(unsigned int n, int start, int len);
+unsigned int set_bits_range(unsigned int n, int start, int len);
+unsigned int insert_bits(unsigned int dest, unsigned int src, int start, int len);
 
 #endif 
