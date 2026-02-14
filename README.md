@@ -55,10 +55,20 @@ bitwise/
 
 ### Bit Transform 
 
-
 * rotl32(uint32_t x, int r);
 * rotr32(uint32_t x, int r);
 * reverse_bits32(uint32_t x);
+
+### Bitwise Arithmetic
+
+* add_no_plus(int32_t a, int32_t b);
+* sub_no_minus(int32_t a, int32_t b);
+* negate32(int32_t x);
+* abs_no_branch(int32_t x);
+* min_no_branch(int32_t a, int32_t b);
+* max_no_branch(int32_t a, int32_t b);
+* have_opposite_signs(int32_t a, int32_t b);
+* average_no_overflow(int32_t a, int32_t b);
 
 All functions are implemented using only:
 
