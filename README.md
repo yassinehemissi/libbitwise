@@ -68,7 +68,7 @@ All functions are implemented using only:
 Compile with GCC:
 
 ```
-gcc src/bit_ops.c test/bit_ops_test.c main.c -Iinclude -o bitwise_test
+gcc src/*.c test/*.c main.c -Iinclude -o bitwise_test
 ```
 
 Run:
