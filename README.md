@@ -53,7 +53,12 @@ bitwise/
 * set_bits_range(unsigned int n, int start, int len)
 * insert_bits(unsigned int dest, unsigned int src, int start, int len)
 
+### Bit Transform 
 
+
+* rotl32(uint32_t x, int r);
+* rotr32(uint32_t x, int r);
+* reverse_bits32(uint32_t x);
 
 All functions are implemented using only:
 
