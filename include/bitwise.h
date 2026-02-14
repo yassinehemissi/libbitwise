@@ -1,7 +1,7 @@
 #ifndef BITWISE_H
 #define BITWISE_H
-
 #include <stdio.h> 
+#include <stdint.h>
 #include <math.h> 
 
 // Bit Operations (Basic)
@@ -30,5 +30,11 @@ unsigned int extract_bits(unsigned int n, int start, int len);
 unsigned int clear_bits_range(unsigned int n, int start, int len);
 unsigned int set_bits_range(unsigned int n, int start, int len);
 unsigned int insert_bits(unsigned int dest, unsigned int src, int start, int len);
+
+// Bit Rotation 
+
+uint32_t rotl32(uint32_t x, int r);
+uint32_t rotr32(uint32_t x, int r);
+uint32_t reverse_bits32(uint32_t x);
 
 #endif 
