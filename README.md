@@ -70,6 +70,13 @@ bitwise/
 * have_opposite_signs(int32_t a, int32_t b);
 * average_no_overflow(int32_t a, int32_t b);
 
+### Bit Scan (Fast Indexes)
+
+* ctz32(uint32_t x);
+* clz32(uint32_t x);
+* ffs32(uint32_t x);
+* fls32(uint32_t x);
+
 All functions are implemented using only:
 
 ```
