@@ -48,4 +48,11 @@ int32_t max_no_branch(int32_t a, int32_t b);
 int have_opposite_signs(int32_t a, int32_t b);
 int32_t average_no_overflow(int32_t a, int32_t b);
 
+// Bit Scan 
+
+int32_t ctz32(uint32_t x);
+int32_t clz32(uint32_t x);
+int32_t ffs32(uint32_t x);
+int32_t fls32(uint32_t x);
+
 #endif 
